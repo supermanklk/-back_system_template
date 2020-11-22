@@ -9,3 +9,4 @@ export * from '../plugin-locale/SelectLang';
 export * from '../plugin-model/useModel';
 export * from '../plugin-request/request';
 export * from '../plugin-helmet/exports';
+export * from '../preset-ui/UmiUIFlag';
