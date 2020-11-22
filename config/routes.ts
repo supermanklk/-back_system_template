@@ -1,4 +1,13 @@
-﻿export default [
+﻿/*
+ * @Author: faith
+ * @Date: 2020-11-23 00:39:58
+ * @LastEditTime: 2020-11-23 01:00:16
+ * @LastEditors: faith
+ * @Description: 
+ * @FilePath: /back_system_template/config/routes.ts
+ * @仰望星空 脚踏实地
+ */
+export default [
   {
     path: '/user',
     component: '../layouts/UserLayout',
@@ -44,6 +53,32 @@
                 authority: ['admin'],
               },
             ],
+          },
+          {
+            name: 'nanyang',
+            icon: 'table',
+            path: '/nanyang',
+            routes: [
+              {
+                path: '/nanyang/xinye',
+                name: 'xinye',
+                icon: 'smile',
+                component: './Nanyang/Xinye',
+              },
+              {
+                path: '/nanyang/tanghe',
+                name: 'tanghe',
+                icon: 'smile',
+                component: './Nanyang/Tanghe',
+              },
+              {
+                name: 'hansangshu',
+                path: '/nanyang/xinye/hansangshu',
+                icon: 'smile',
+                component: './Nanyang/Xinye/Hansangshu',
+                hideInMenu : true
+              },
+            ]
           },
           {
             name: 'list.table-list',
