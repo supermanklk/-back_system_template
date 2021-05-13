@@ -10,6 +10,7 @@ export * from '/Users/zhangbin/Desktop/superman_project/back_system_template/src
 export * from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/models/login';
 export * from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/models/setting';
 export * from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/models/user';
+export * from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/pages/AccountCenter/model';
 
 export interface Action<T = any> {
   type: T

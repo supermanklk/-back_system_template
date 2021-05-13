@@ -1,9 +1,12 @@
 import React from 'react'
 
+
+
 export default function index() {
     return (
-        <div>
-            tanghe
+        <div >
+            tang he
         </div>
-    )
+    );
 }
+

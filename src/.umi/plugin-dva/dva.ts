@@ -9,6 +9,7 @@ import ModelGlobal0 from '/Users/zhangbin/Desktop/superman_project/back_system_t
 import ModelLogin1 from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/models/login.ts';
 import ModelSetting2 from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/models/setting.ts';
 import ModelUser3 from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/models/user.ts';
+import ModelModel4 from '/Users/zhangbin/Desktop/superman_project/back_system_template/src/pages/AccountCenter/model.ts';
 
 let app:any = null;
 
@@ -36,6 +37,7 @@ export function _onCreate(options = {}) {
 app.model({ namespace: 'login', ...ModelLogin1 });
 app.model({ namespace: 'setting', ...ModelSetting2 });
 app.model({ namespace: 'user', ...ModelUser3 });
+app.model({ namespace: 'model', ...ModelModel4 });
   return app;
 }
 

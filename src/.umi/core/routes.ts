@@ -70,6 +70,35 @@ export function getRoutes() {
             ]
           },
           {
+            "name": "nanyang",
+            "icon": "table",
+            "path": "/nanyang",
+            "routes": [
+              {
+                "path": "/nanyang/xinye",
+                "name": "xinye",
+                "icon": "smile",
+                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Nanyang__Xinye' */'/Users/zhangbin/Desktop/superman_project/back_system_template/src/pages/Nanyang/Xinye'), loading: LoadingComponent}),
+                "exact": true
+              },
+              {
+                "path": "/nanyang/tanghe",
+                "name": "tanghe",
+                "icon": "smile",
+                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Nanyang__Tanghe' */'/Users/zhangbin/Desktop/superman_project/back_system_template/src/pages/Nanyang/Tanghe'), loading: LoadingComponent}),
+                "exact": true
+              },
+              {
+                "name": "hansangshu",
+                "path": "/nanyang/xinye/hansangshu",
+                "icon": "smile",
+                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Nanyang__Xinye__Hansangshu' */'/Users/zhangbin/Desktop/superman_project/back_system_template/src/pages/Nanyang/Xinye/Hansangshu'), loading: LoadingComponent}),
+                "hideInMenu": true,
+                "exact": true
+              }
+            ]
+          },
+          {
             "name": "list.table-list",
             "icon": "table",
             "path": "/list",
